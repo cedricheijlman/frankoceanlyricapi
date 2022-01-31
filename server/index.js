@@ -7,9 +7,10 @@ const lyrics = JSON.parse(
 );
 
 app.get("/api/v1/frankoceanlyric", (req, res) => {
+  const randomNum = Math.floor(Math.random() * lyrics.length);
   res.status(200).send({
     status: 200,
-    randomLyric: lyrics[Math.floor(Math.random() * lyrics.length)].lyric,
+    data: { ...lyrics[randomNum] },
   });
 });
 

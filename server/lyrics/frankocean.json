@@ -1,11 +1,27 @@
 [
   {
     "id": 1,
+    "album": "Blonde",
+    "song": "Nikes",
     "lyric": "Said She Need A Ring Like Carmelo (Hands Up, Oh My God)/Must Be On That White Like Othello (Oh My It's A Real Life Angel)"
   },
 
   {
     "id": 2,
+    "album": "Blonde",
+    "song": "White Ferrari",
     "lyric": "I care for you still and I will, forever. That was my part of the deal."
+  },
+  {
+    "id": 3,
+    "album": "Channel Orange",
+    "song": "Bad Religion",
+    "lyric": "It’s a bad religion, to be in love with someone who could never love you."
+  },
+  {
+    "id": 4,
+    "album": "Endless",
+    "song": "U-N-I-T-Y",
+    "lyric": "Green emerald, pink diamonds like Apple Jack bowl."
   }
 ]
