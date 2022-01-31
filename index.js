@@ -14,6 +14,10 @@ app.get("/api/v1/frankoceanlyric", (req, res) => {
   });
 });
 
+app.get("/", (req, res) => {
+  res.status(200).send({ status: 200, data: "world" });
+});
+
 const port = 3001;
 app.listen(port, () => {
   console.log(`App running on port ${port}`);
