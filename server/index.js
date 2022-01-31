@@ -1,9 +1,16 @@
 const express = require("express");
-
+const fs = require("fs");
 const app = express();
 
-app.get("/", (req, res) => {
-  res.status(200).send("Hello World");
+const lyrics = JSON.parse(
+  fs.readFileSync(`${__dirname}/lyrics/frankocean.json`)
+);
+
+app.get("/api/v1/frankoceanlyric", (req, res) => {
+  res.status(200).send({
+    status: 200,
+    randomLyric: lyrics[Math.floor(Math.random() * lyrics.length)].lyric,
+  });
 });
 
 const port = 3001;
